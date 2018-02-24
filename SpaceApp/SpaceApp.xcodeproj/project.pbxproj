@@ -27,6 +27,12 @@
 		EC222DEC204206010040DB18 /* ActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DEB204206010040DB18 /* ActionsViewController.swift */; };
 		EC222DF020420CA60040DB18 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DEF20420CA60040DB18 /* R.generated.swift */; };
 		EC222DF320420D1F0040DB18 /* News.json in Resources */ = {isa = PBXBuildFile; fileRef = EC222DF220420D1F0040DB18 /* News.json */; };
+		EC222DF6204213450040DB18 /* NewsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DF5204213450040DB18 /* NewsService.swift */; };
+		EC222DF9204214020040DB18 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DF8204214020040DB18 /* Action.swift */; };
+		EC222DFB204214220040DB18 /* RelatedVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DFA204214220040DB18 /* RelatedVideo.swift */; };
+		EC222DFD204214490040DB18 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DFC204214490040DB18 /* News.swift */; };
+		EC222DFF2042145C0040DB18 /* VideoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DFE2042145C0040DB18 /* VideoDetail.swift */; };
+		EC222E012042153B0040DB18 /* ServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222E002042153B0040DB18 /* ServiceResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +83,12 @@
 		EC222DEB204206010040DB18 /* ActionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsViewController.swift; sourceTree = "<group>"; };
 		EC222DEF20420CA60040DB18 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		EC222DF220420D1F0040DB18 /* News.json */ = {isa = PBXFileReference; explicitFileType = sourcecode.javascript; path = News.json; sourceTree = "<group>"; };
+		EC222DF5204213450040DB18 /* NewsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsService.swift; sourceTree = "<group>"; };
+		EC222DF8204214020040DB18 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		EC222DFA204214220040DB18 /* RelatedVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedVideo.swift; sourceTree = "<group>"; };
+		EC222DFC204214490040DB18 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		EC222DFE2042145C0040DB18 /* VideoDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetail.swift; sourceTree = "<group>"; };
+		EC222E002042153B0040DB18 /* ServiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResponse.swift; sourceTree = "<group>"; };
 		F4945D64DA414BAE7C59EF23 /* Pods_SpaceAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -153,6 +165,8 @@
 		EC222DAA2041F3EA0040DB18 /* SpaceApp */ = {
 			isa = PBXGroup;
 			children = (
+				EC222DF7204213620040DB18 /* Models */,
+				EC222DF4204213300040DB18 /* Services */,
 				EC222DF120420D140040DB18 /* StaticFixtures */,
 				EC222DEE20420C9A0040DB18 /* R */,
 				EC222DE12042041E0040DB18 /* Scenes */,
@@ -222,6 +236,26 @@
 				EC222DF220420D1F0040DB18 /* News.json */,
 			);
 			path = StaticFixtures;
+			sourceTree = "<group>";
+		};
+		EC222DF4204213300040DB18 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EC222DF5204213450040DB18 /* NewsService.swift */,
+				EC222E002042153B0040DB18 /* ServiceResponse.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EC222DF7204213620040DB18 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC222DF8204214020040DB18 /* Action.swift */,
+				EC222DFA204214220040DB18 /* RelatedVideo.swift */,
+				EC222DFC204214490040DB18 /* News.swift */,
+				EC222DFE2042145C0040DB18 /* VideoDetail.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,9 +530,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC222E012042153B0040DB18 /* ServiceResponse.swift in Sources */,
 				EC222DDB204200530040DB18 /* ButtonTableViewCell.swift in Sources */,
+				EC222DFF2042145C0040DB18 /* VideoDetail.swift in Sources */,
+				EC222DF9204214020040DB18 /* Action.swift in Sources */,
 				EC222DE8204205DE0040DB18 /* DescriptionViewController.swift in Sources */,
 				EC222DEA204205F00040DB18 /* RelatedVideosViewController.swift in Sources */,
+				EC222DFD204214490040DB18 /* News.swift in Sources */,
 				EC222DAE2041F3EA0040DB18 /* ViewController.swift in Sources */,
 				EC222DE6204205D50040DB18 /* VideoViewController.swift in Sources */,
 				EC222DDF204200E50040DB18 /* VideoCollectionViewCell.swift in Sources */,
@@ -506,6 +544,8 @@
 				EC222DF020420CA60040DB18 /* R.generated.swift in Sources */,
 				EC222DE32042054A0040DB18 /* NewsViewController.swift in Sources */,
 				EC222DAC2041F3EA0040DB18 /* AppDelegate.swift in Sources */,
+				EC222DF6204213450040DB18 /* NewsService.swift in Sources */,
+				EC222DFB204214220040DB18 /* RelatedVideo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
