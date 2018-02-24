@@ -36,6 +36,7 @@
 		EC222E04204217350040DB18 /* NewsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222E03204217350040DB18 /* NewsInteractor.swift */; };
 		EC222E06204217680040DB18 /* NewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222E05204217680040DB18 /* NewsPresenter.swift */; };
 		EC222E08204217AB0040DB18 /* NewsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222E07204217AB0040DB18 /* NewsModels.swift */; };
+		EC222E0A204220850040DB18 /* NewsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222E09204220850040DB18 /* NewsConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		EC222E03204217350040DB18 /* NewsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsInteractor.swift; sourceTree = "<group>"; };
 		EC222E05204217680040DB18 /* NewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPresenter.swift; sourceTree = "<group>"; };
 		EC222E07204217AB0040DB18 /* NewsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModels.swift; sourceTree = "<group>"; };
+		EC222E09204220850040DB18 /* NewsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsConfigurator.swift; sourceTree = "<group>"; };
 		F4945D64DA414BAE7C59EF23 /* Pods_SpaceAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -217,6 +219,7 @@
 				EC222E03204217350040DB18 /* NewsInteractor.swift */,
 				EC222E05204217680040DB18 /* NewsPresenter.swift */,
 				EC222E07204217AB0040DB18 /* NewsModels.swift */,
+				EC222E09204220850040DB18 /* NewsConfigurator.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -556,6 +559,7 @@
 				EC222DEA204205F00040DB18 /* RelatedVideosViewController.swift in Sources */,
 				EC222DFD204214490040DB18 /* News.swift in Sources */,
 				EC222DAE2041F3EA0040DB18 /* ViewController.swift in Sources */,
+				EC222E0A204220850040DB18 /* NewsConfigurator.swift in Sources */,
 				EC222DE6204205D50040DB18 /* VideoViewController.swift in Sources */,
 				EC222DDF204200E50040DB18 /* VideoCollectionViewCell.swift in Sources */,
 				EC222DEC204206010040DB18 /* ActionsViewController.swift in Sources */,

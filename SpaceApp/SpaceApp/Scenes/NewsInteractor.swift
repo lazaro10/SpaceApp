@@ -8,16 +8,16 @@
 
 import Foundation
 
-protocol NewsIteractorOutput {
+protocol NewsInteractorOutput {
     func presentNews(response: NewsModel.FetchNews.Response)
     func presentError(error: ServiceError)
 }
 
 struct NewsInteractor {
     private let service: NewsService
-    private let output: NewsIteractorOutput
+    private let output: NewsInteractorOutput
     
-    init(service: NewsService, output: NewsIteractorOutput) {
+    init(service: NewsService, output: NewsInteractorOutput) {
         self.service = service
         self.output = output
     }
