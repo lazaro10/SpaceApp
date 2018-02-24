@@ -16,6 +16,15 @@
 		EC222DB62041F3EA0040DB18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC222DB42041F3EA0040DB18 /* LaunchScreen.storyboard */; };
 		EC222DC12041F3EA0040DB18 /* SpaceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DC02041F3EA0040DB18 /* SpaceAppTests.swift */; };
 		EC222DCC2041F3EA0040DB18 /* SpaceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DCB2041F3EA0040DB18 /* SpaceAppUITests.swift */; };
+		EC222DDB204200530040DB18 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DD9204200530040DB18 /* ButtonTableViewCell.swift */; };
+		EC222DDC204200530040DB18 /* ButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC222DDA204200530040DB18 /* ButtonTableViewCell.xib */; };
+		EC222DDF204200E50040DB18 /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DDD204200E50040DB18 /* VideoCollectionViewCell.swift */; };
+		EC222DE0204200E50040DB18 /* VideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC222DDE204200E50040DB18 /* VideoCollectionViewCell.xib */; };
+		EC222DE32042054A0040DB18 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DE22042054A0040DB18 /* NewsViewController.swift */; };
+		EC222DE6204205D50040DB18 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DE5204205D50040DB18 /* VideoViewController.swift */; };
+		EC222DE8204205DE0040DB18 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DE7204205DE0040DB18 /* DescriptionViewController.swift */; };
+		EC222DEA204205F00040DB18 /* RelatedVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DE9204205F00040DB18 /* RelatedVideosViewController.swift */; };
+		EC222DEC204206010040DB18 /* ActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DEB204206010040DB18 /* ActionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +64,15 @@
 		EC222DC72041F3EA0040DB18 /* SpaceAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC222DCB2041F3EA0040DB18 /* SpaceAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceAppUITests.swift; sourceTree = "<group>"; };
 		EC222DCD2041F3EA0040DB18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC222DD9204200530040DB18 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		EC222DDA204200530040DB18 /* ButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonTableViewCell.xib; sourceTree = "<group>"; };
+		EC222DDD204200E50040DB18 /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC222DDE204200E50040DB18 /* VideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionViewCell.xib; sourceTree = "<group>"; };
+		EC222DE22042054A0040DB18 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		EC222DE5204205D50040DB18 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		EC222DE7204205DE0040DB18 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		EC222DE9204205F00040DB18 /* RelatedVideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedVideosViewController.swift; sourceTree = "<group>"; };
+		EC222DEB204206010040DB18 /* ActionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsViewController.swift; sourceTree = "<group>"; };
 		F4945D64DA414BAE7C59EF23 /* Pods_SpaceAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -131,12 +149,17 @@
 		EC222DAA2041F3EA0040DB18 /* SpaceApp */ = {
 			isa = PBXGroup;
 			children = (
+				EC222DE12042041E0040DB18 /* Scenes */,
 				EC222DAB2041F3EA0040DB18 /* AppDelegate.swift */,
 				EC222DAD2041F3EA0040DB18 /* ViewController.swift */,
 				EC222DAF2041F3EA0040DB18 /* Main.storyboard */,
-				EC222DB22041F3EA0040DB18 /* Assets.xcassets */,
 				EC222DB42041F3EA0040DB18 /* LaunchScreen.storyboard */,
 				EC222DB72041F3EA0040DB18 /* Info.plist */,
+				EC222DB22041F3EA0040DB18 /* Assets.xcassets */,
+				EC222DD9204200530040DB18 /* ButtonTableViewCell.swift */,
+				EC222DDA204200530040DB18 /* ButtonTableViewCell.xib */,
+				EC222DDD204200E50040DB18 /* VideoCollectionViewCell.swift */,
+				EC222DDE204200E50040DB18 /* VideoCollectionViewCell.xib */,
 			);
 			path = SpaceApp;
 			sourceTree = "<group>";
@@ -157,6 +180,26 @@
 				EC222DCD2041F3EA0040DB18 /* Info.plist */,
 			);
 			path = SpaceAppUITests;
+			sourceTree = "<group>";
+		};
+		EC222DE12042041E0040DB18 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EC222DE4204205BA0040DB18 /* Components */,
+				EC222DE22042054A0040DB18 /* NewsViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EC222DE4204205BA0040DB18 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EC222DE5204205D50040DB18 /* VideoViewController.swift */,
+				EC222DE7204205DE0040DB18 /* DescriptionViewController.swift */,
+				EC222DE9204205F00040DB18 /* RelatedVideosViewController.swift */,
+				EC222DEB204206010040DB18 /* ActionsViewController.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,7 +317,9 @@
 			files = (
 				EC222DB62041F3EA0040DB18 /* LaunchScreen.storyboard in Resources */,
 				EC222DB32041F3EA0040DB18 /* Assets.xcassets in Resources */,
+				EC222DE0204200E50040DB18 /* VideoCollectionViewCell.xib in Resources */,
 				EC222DB12041F3EA0040DB18 /* Main.storyboard in Resources */,
+				EC222DDC204200530040DB18 /* ButtonTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +355,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		3314343772FCBC967D5B08D9 /* [CP] Check Pods Manifest.lock */ = {
@@ -328,7 +373,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		45FA6B40438D1F4CBC5FF4D3 /* [CP] Copy Pods Resources */ = {
@@ -414,7 +459,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC222DDB204200530040DB18 /* ButtonTableViewCell.swift in Sources */,
+				EC222DE8204205DE0040DB18 /* DescriptionViewController.swift in Sources */,
+				EC222DEA204205F00040DB18 /* RelatedVideosViewController.swift in Sources */,
 				EC222DAE2041F3EA0040DB18 /* ViewController.swift in Sources */,
+				EC222DE6204205D50040DB18 /* VideoViewController.swift in Sources */,
+				EC222DDF204200E50040DB18 /* VideoCollectionViewCell.swift in Sources */,
+				EC222DEC204206010040DB18 /* ActionsViewController.swift in Sources */,
+				EC222DE32042054A0040DB18 /* NewsViewController.swift in Sources */,
 				EC222DAC2041F3EA0040DB18 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
