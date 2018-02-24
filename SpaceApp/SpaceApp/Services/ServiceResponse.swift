@@ -12,6 +12,15 @@ enum ServiceError: Error {
     
     case fetchError
     case unknown(Error)
+    
+    var localizedDescription: String {
+        switch self {
+        case .fetchError:
+            return "Ocorreu um erro"
+        case .unknown(_):
+            return "Ocorreu um erro desconhecido"
+        }
+    }
 }
 
 enum ServiceResponse<T> {
