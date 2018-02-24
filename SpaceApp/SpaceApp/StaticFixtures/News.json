@@ -1,0 +1,38 @@
+{
+    "videoUrl": "https://video.fcgh9-1.fna.fbcdn.net/v/t43.1792-2/27662516_413727819088907_3273282691830644736_n.mp4?efg=eyJybHIiOjE1MDAsInJsYSI6MTAyNCwidmVuY29kZV90YWciOiJzdmVfaGQifQ%3D%3D&rl=1500&vabr=350&oh=25476c0a691ab40ea8f23a5fdbc0fcbd&oe=5A921777",
+    "detail": {
+        "title": "Building apps for ios X",
+        "description": "Lorem ipsum dolor sit amet, his iuvaret reprimique ad, duo saepe splendide ex, mel consul definiebas cu. Pro autem maluisset id. Integre torquatos sea et. At erat iisque mea, ad mel verear iuvaret, affert epicuri lobortis eos cu. Vel modo sale forensibus in. Ut usu munere impedit, elitr vivendum atomorum mea ex, pro nibh timeam efficiendi eu.",
+        "sessionNumber": 201,
+        "publishPeriod": "Fall 2017",
+        "categories": ["appFrameworks"]
+    },
+    "actions": [{
+                "id": "markAsWatched",
+                "title": "Mark as Watched"
+                },
+                {
+                "id": "downloadVideo",
+                "title": "Download Video"
+                },
+                {
+                "id": "leaveFeedback",
+                "title": "Leave Feedback"
+                }
+                ],
+    "relatedVideos": [{
+                      "title": "Video 1",
+                      "image": "https://images.lojaiplace.com.br/hotsites/iphone-x/imagens/3.jpg",
+                      "url": "https://video.fcgh9-1.fna.fbcdn.net/v/t43.1792-2/27662516_413727819088907_3273282691830644736_n.mp4?efg=eyJybHIiOjE1MDAsInJsYSI6MTAyNCwidmVuY29kZV90YWciOiJzdmVfaGQifQ%3D%3D&rl=1500&vabr=350&oh=25476c0a691ab40ea8f23a5fdbc0fcbd&oe=5A921777"
+                      
+                      
+                      },
+                      {
+                      "title": "Video 2",
+                      "image": "https://support.apple.com/library/content/dam/edam/applecare/images/en_US/iphone/iphone7plus/iphone7plus-colors.jpg",
+                      "url": "https://video.fcgh9-1.fna.fbcdn.net/v/t43.1792-2/27662516_413727819088907_3273282691830644736_n.mp4?efg=eyJybHIiOjE1MDAsInJsYSI6MTAyNCwidmVuY29kZV90YWciOiJzdmVfaGQifQ%3D%3D&rl=1500&vabr=350&oh=25476c0a691ab40ea8f23a5fdbc0fcbd&oe=5A921777"
+                      
+                      
+                      }
+                      ]
+}

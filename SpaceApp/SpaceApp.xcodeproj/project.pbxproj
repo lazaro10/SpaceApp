@@ -26,6 +26,7 @@
 		EC222DEA204205F00040DB18 /* RelatedVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DE9204205F00040DB18 /* RelatedVideosViewController.swift */; };
 		EC222DEC204206010040DB18 /* ActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DEB204206010040DB18 /* ActionsViewController.swift */; };
 		EC222DF020420CA60040DB18 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DEF20420CA60040DB18 /* R.generated.swift */; };
+		EC222DF320420D1F0040DB18 /* News.json in Resources */ = {isa = PBXBuildFile; fileRef = EC222DF220420D1F0040DB18 /* News.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		EC222DE9204205F00040DB18 /* RelatedVideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedVideosViewController.swift; sourceTree = "<group>"; };
 		EC222DEB204206010040DB18 /* ActionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsViewController.swift; sourceTree = "<group>"; };
 		EC222DEF20420CA60040DB18 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		EC222DF220420D1F0040DB18 /* News.json */ = {isa = PBXFileReference; explicitFileType = sourcecode.javascript; path = News.json; sourceTree = "<group>"; };
 		F4945D64DA414BAE7C59EF23 /* Pods_SpaceAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -151,6 +153,7 @@
 		EC222DAA2041F3EA0040DB18 /* SpaceApp */ = {
 			isa = PBXGroup;
 			children = (
+				EC222DF120420D140040DB18 /* StaticFixtures */,
 				EC222DEE20420C9A0040DB18 /* R */,
 				EC222DE12042041E0040DB18 /* Scenes */,
 				EC222DAB2041F3EA0040DB18 /* AppDelegate.swift */,
@@ -211,6 +214,14 @@
 				EC222DEF20420CA60040DB18 /* R.generated.swift */,
 			);
 			path = R;
+			sourceTree = "<group>";
+		};
+		EC222DF120420D140040DB18 /* StaticFixtures */ = {
+			isa = PBXGroup;
+			children = (
+				EC222DF220420D1F0040DB18 /* News.json */,
+			);
+			path = StaticFixtures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +342,7 @@
 				EC222DB32041F3EA0040DB18 /* Assets.xcassets in Resources */,
 				EC222DE0204200E50040DB18 /* VideoCollectionViewCell.xib in Resources */,
 				EC222DB12041F3EA0040DB18 /* Main.storyboard in Resources */,
+				EC222DF320420D1F0040DB18 /* News.json in Resources */,
 				EC222DDC204200530040DB18 /* ButtonTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
