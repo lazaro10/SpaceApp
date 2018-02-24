@@ -7,17 +7,17 @@
 //
 
 import UIKit
+import Rswift
 
 class NewsViewController: UIViewController {
     
+    @IBOutlet weak var videoView: UIView!
+    @IBOutlet weak var descriptionView: UIView!
+    @IBOutlet weak var actionsView: UIView!
+    @IBOutlet weak var relatedVideosView: UIView!
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
-
-    
 }

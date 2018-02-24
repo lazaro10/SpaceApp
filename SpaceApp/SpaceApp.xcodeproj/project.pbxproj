@@ -25,6 +25,7 @@
 		EC222DE8204205DE0040DB18 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DE7204205DE0040DB18 /* DescriptionViewController.swift */; };
 		EC222DEA204205F00040DB18 /* RelatedVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DE9204205F00040DB18 /* RelatedVideosViewController.swift */; };
 		EC222DEC204206010040DB18 /* ActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DEB204206010040DB18 /* ActionsViewController.swift */; };
+		EC222DF020420CA60040DB18 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC222DEF20420CA60040DB18 /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		EC222DE7204205DE0040DB18 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		EC222DE9204205F00040DB18 /* RelatedVideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedVideosViewController.swift; sourceTree = "<group>"; };
 		EC222DEB204206010040DB18 /* ActionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionsViewController.swift; sourceTree = "<group>"; };
+		EC222DEF20420CA60040DB18 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		F4945D64DA414BAE7C59EF23 /* Pods_SpaceAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -149,6 +151,7 @@
 		EC222DAA2041F3EA0040DB18 /* SpaceApp */ = {
 			isa = PBXGroup;
 			children = (
+				EC222DEE20420C9A0040DB18 /* R */,
 				EC222DE12042041E0040DB18 /* Scenes */,
 				EC222DAB2041F3EA0040DB18 /* AppDelegate.swift */,
 				EC222DAD2041F3EA0040DB18 /* ViewController.swift */,
@@ -202,6 +205,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		EC222DEE20420C9A0040DB18 /* R */ = {
+			isa = PBXGroup;
+			children = (
+				EC222DEF20420CA60040DB18 /* R.generated.swift */,
+			);
+			path = R;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -210,6 +221,7 @@
 			buildConfigurationList = EC222DD02041F3EA0040DB18 /* Build configuration list for PBXNativeTarget "SpaceApp" */;
 			buildPhases = (
 				3314343772FCBC967D5B08D9 /* [CP] Check Pods Manifest.lock */,
+				EC222DED20420C6D0040DB18 /* ShellScript */,
 				EC222DA42041F3EA0040DB18 /* Sources */,
 				EC222DA52041F3EA0040DB18 /* Frameworks */,
 				EC222DA62041F3EA0040DB18 /* Resources */,
@@ -437,6 +449,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SpaceApp/Pods-SpaceApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EC222DED20420C6D0040DB18 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+		};
 		F606C982CB6813E3E692F862 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -466,6 +491,7 @@
 				EC222DE6204205D50040DB18 /* VideoViewController.swift in Sources */,
 				EC222DDF204200E50040DB18 /* VideoCollectionViewCell.swift in Sources */,
 				EC222DEC204206010040DB18 /* ActionsViewController.swift in Sources */,
+				EC222DF020420CA60040DB18 /* R.generated.swift in Sources */,
 				EC222DE32042054A0040DB18 /* NewsViewController.swift in Sources */,
 				EC222DAC2041F3EA0040DB18 /* AppDelegate.swift in Sources */,
 			);

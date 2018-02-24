@@ -112,6 +112,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="zVr-dL-xvD"/>
                     <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="actionsView" destination="eyb-IK-edf" id="xLr-M9-iF5"/>
+                        <outlet property="descriptionView" destination="FiJ-Xb-OSv" id="7eO-7U-at9"/>
+                        <outlet property="relatedVideosView" destination="Bby-mw-xgz" id="kOn-40-NAX"/>
+                        <outlet property="videoView" destination="bXU-IL-mfv" id="0m2-EI-drF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -142,7 +148,21 @@
                     <view key="view" contentMode="scaleToFill" id="pNe-Na-Vcy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="0.31095377600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ISJ-Zx-wSQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                <connections>
+                                    <segue destination="4nf-08-5uA" kind="embed" id="ihk-Mt-cRF"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ISJ-Zx-wSQ" firstAttribute="top" secondItem="BZI-nW-jdI" secondAttribute="top" id="1Mb-XT-Dl4"/>
+                            <constraint firstItem="BZI-nW-jdI" firstAttribute="trailing" secondItem="ISJ-Zx-wSQ" secondAttribute="trailing" id="Iv0-Yi-sC1"/>
+                            <constraint firstItem="BZI-nW-jdI" firstAttribute="bottom" secondItem="ISJ-Zx-wSQ" secondAttribute="bottom" id="lxz-Fm-Xgo"/>
+                            <constraint firstItem="ISJ-Zx-wSQ" firstAttribute="leading" secondItem="BZI-nW-jdI" secondAttribute="leading" id="yUn-6O-rjF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BZI-nW-jdI"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="naT-UE-9rw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -188,6 +208,7 @@
                             <constraint firstItem="RtF-Pf-zQ7" firstAttribute="leading" secondItem="5iJ-cE-5TY" secondAttribute="leading" constant="16" id="fin-v6-5Xl"/>
                             <constraint firstAttribute="bottom" secondItem="RtF-Pf-zQ7" secondAttribute="bottom" constant="8" id="p5B-Fp-N9o"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="nhp-dr-o9M"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15Z-hv-oKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -214,11 +235,20 @@
                             <constraint firstItem="t80-NK-E11" firstAttribute="leading" secondItem="DsJ-Fw-zza" secondAttribute="leading" constant="16" id="njq-sE-mLE"/>
                             <constraint firstItem="t80-NK-E11" firstAttribute="top" secondItem="DsJ-Fw-zza" secondAttribute="top" constant="8" id="pav-ss-LUn"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ydf-ch-IZD"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bsk-I6-sK4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1364" y="280"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="73u-Ua-lWj">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="4nf-08-5uA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uhw-TS-XiA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2231" y="-461"/>
         </scene>
         <!--Description View Controller-->
         <scene sceneID="qhW-Zd-2k0">
@@ -248,7 +278,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziZ-3o-6OX">
                                 <rect key="frame" x="16" y="103" width="343" height="325"/>
-                                <mutableString key="text">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</mutableString>
+                                <string key="text">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -269,6 +299,7 @@
                             <constraint firstItem="VtM-Op-F6h" firstAttribute="top" secondItem="f5u-4s-8cG" secondAttribute="top" constant="8" id="sBt-H9-yzO"/>
                             <constraint firstAttribute="trailing" secondItem="sGf-gQ-GBv" secondAttribute="trailing" constant="16" id="tuH-Np-cVU"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="1EZ-by-zbK"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cPc-QK-IVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
