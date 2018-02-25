@@ -33,7 +33,7 @@
                                                             <constraint firstAttribute="height" constant="200" id="XVx-Kb-wxK"/>
                                                         </constraints>
                                                         <connections>
-                                                            <segue destination="4XV-uW-YcU" kind="embed" id="sSH-TY-lca"/>
+                                                            <segue destination="4XV-uW-YcU" kind="embed" identifier="showVideoViewController" id="sSH-TY-lca"/>
                                                         </connections>
                                                     </containerView>
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FiJ-Xb-OSv">
@@ -42,7 +42,7 @@
                                                             <constraint firstAttribute="height" constant="450" id="LqK-oE-HmM"/>
                                                         </constraints>
                                                         <connections>
-                                                            <segue destination="l6E-zU-vWo" kind="embed" id="lYp-o4-3Wc"/>
+                                                            <segue destination="l6E-zU-vWo" kind="embed" identifier="" id="lYp-o4-3Wc"/>
                                                         </connections>
                                                     </containerView>
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyb-IK-edf">
@@ -51,7 +51,7 @@
                                                             <constraint firstAttribute="height" constant="150" id="n3O-WI-GBc"/>
                                                         </constraints>
                                                         <connections>
-                                                            <segue destination="U6n-q2-qcr" kind="embed" id="n3z-oa-Tyf"/>
+                                                            <segue destination="U6n-q2-qcr" kind="embed" identifier="showRelatedVideosViewController" id="n3z-oa-Tyf"/>
                                                         </connections>
                                                     </containerView>
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bby-mw-xgz">
@@ -60,7 +60,7 @@
                                                             <constraint firstAttribute="height" constant="200" id="df4-bS-58Y"/>
                                                         </constraints>
                                                         <connections>
-                                                            <segue destination="lSh-Js-iAm" kind="embed" id="G0Q-pn-WpE"/>
+                                                            <segue destination="lSh-Js-iAm" kind="embed" identifier="showActionsViewController" id="G0Q-pn-WpE"/>
                                                         </connections>
                                                     </containerView>
                                                 </subviews>
@@ -112,12 +112,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="zVr-dL-xvD"/>
                     <size key="freeformSize" width="375" height="1000"/>
-                    <connections>
-                        <outlet property="actionsView" destination="eyb-IK-edf" id="xLr-M9-iF5"/>
-                        <outlet property="descriptionView" destination="FiJ-Xb-OSv" id="7eO-7U-at9"/>
-                        <outlet property="relatedVideosView" destination="Bby-mw-xgz" id="kOn-40-NAX"/>
-                        <outlet property="videoView" destination="bXU-IL-mfv" id="0m2-EI-drF"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,27 +135,13 @@
             </objects>
             <point key="canvasLocation" x="-398" y="133"/>
         </scene>
-        <!--Video View Controller-->
+        <!--View Controller-->
         <scene sceneID="xKp-dr-EAw">
             <objects>
-                <viewController id="4XV-uW-YcU" customClass="VideoViewController" customModule="SpaceApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4XV-uW-YcU" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pNe-Na-Vcy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ISJ-Zx-wSQ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
-                                <connections>
-                                    <segue destination="4nf-08-5uA" kind="embed" id="ihk-Mt-cRF"/>
-                                </connections>
-                            </containerView>
-                        </subviews>
-                        <constraints>
-                            <constraint firstItem="ISJ-Zx-wSQ" firstAttribute="top" secondItem="BZI-nW-jdI" secondAttribute="top" id="1Mb-XT-Dl4"/>
-                            <constraint firstItem="BZI-nW-jdI" firstAttribute="trailing" secondItem="ISJ-Zx-wSQ" secondAttribute="trailing" id="Iv0-Yi-sC1"/>
-                            <constraint firstItem="BZI-nW-jdI" firstAttribute="bottom" secondItem="ISJ-Zx-wSQ" secondAttribute="bottom" id="lxz-Fm-Xgo"/>
-                            <constraint firstItem="ISJ-Zx-wSQ" firstAttribute="leading" secondItem="BZI-nW-jdI" secondAttribute="leading" id="yUn-6O-rjF"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BZI-nW-jdI"/>
                     </view>
                 </viewController>
@@ -240,21 +220,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bsk-I6-sK4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1364" y="280"/>
-        </scene>
-        <!--AV Player View Controller-->
-        <scene sceneID="73u-Ua-lWj">
-            <objects>
-                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="4nf-08-5uA" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uhw-TS-XiA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2231" y="-461"/>
+            <point key="canvasLocation" x="1441" y="274"/>
         </scene>
         <!--Description View Controller-->
         <scene sceneID="qhW-Zd-2k0">
             <objects>
-                <viewController id="l6E-zU-vWo" customClass="DescriptionViewController" customModule="SpaceApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="f5u-4s-8cG">
+                <viewController storyboardIdentifier="DescriptionViewController" id="l6E-zU-vWo" customClass="DescriptionViewController" customModule="SpaceApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f5u-4s-8cG" customClass="DescriptionView" customModule="SpaceApp" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="450"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -301,6 +273,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1EZ-by-zbK"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="ziZ-3o-6OX" id="3I4-ON-5xJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cPc-QK-IVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,7 +10,7 @@ import Foundation
 
 struct News: Codable {
     
-    let videoURL: URL
+    let videoUrl: URL
     let detail: VideoDetail
     let actions: [Action]
     let relatedVideos: [RelatedVideo]

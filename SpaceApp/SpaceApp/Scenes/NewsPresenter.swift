@@ -24,7 +24,7 @@ struct NewsPresenter {
     func presentNews(response: NewsModel.FetchNews.Response) {
         
         let viewModel = NewsModel.FetchNews.ViewModel(
-            videoUrl: response.news.videoURL,
+            videoUrl: response.news.videoUrl,
             title: response.news.detail.title,
             periodDescription: response.news.detail.publishPeriod,
             session: "Session \(response.news.detail.sessionNumber)",
@@ -38,7 +38,7 @@ struct NewsPresenter {
             relatedVideos: response.news.relatedVideos.map {
                 NewsModel.FetchNews.ViewModel.RelatedVideo(
                     title: $0.title,
-                    imageUrl: $0.imageURL
+                    imageUrl: $0.image
                 )
             }
         )

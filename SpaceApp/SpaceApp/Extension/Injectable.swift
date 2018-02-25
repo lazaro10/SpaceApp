@@ -1,5 +1,5 @@
 //
-//  RelatedVideo.swift
+//  Injectable.swift
 //  SpaceApp
 //
 //  Created by Lázaro Lima dos Santos on 24/02/18.
@@ -8,9 +8,8 @@
 
 import Foundation
 
-struct RelatedVideo: Codable {
-    
-    let title: String
-    let image: URL
-    let url: URL
+protocol Injectable {
+    associatedtype T
+    func inject(_: T)
+    func assertDependencies()
 }

@@ -18,25 +18,24 @@ class NewsViewController: UIViewController {
     
     var output: NewsViewControllerOutput?
     
-    @IBOutlet weak var videoView: UIView!
-    @IBOutlet weak var descriptionView: UIView!
-    @IBOutlet weak var actionsView: UIView!
-    @IBOutlet weak var relatedVideosView: UIView!
-    
+
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         NewsConfigurator.configure(viewController: self)
-        
         output?.fetchNews(request: NewsModel.FetchNews.Request())
     }
     
     func displayNews(viewModel: NewsModel.FetchNews.ViewModel) {
-        
-        
+        injectDescriptionContainer(bla: viewModel.newsDescription)
     }
     
     func displayError(error: NewsModel.FetchNews.Error.ViewModel) {
         
+    }
+    
+    private func injectDescriptionContainer(bla: String) {
+        let descriptionContainer: DescriptionViewController = R.storyboard.main().instantiateInitialViewController() as! DescriptionViewController
+        
+        descriptionContainer.teste = bla
     }
 }
