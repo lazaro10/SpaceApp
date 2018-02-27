@@ -42,7 +42,7 @@
                                                             <constraint firstAttribute="height" constant="450" id="LqK-oE-HmM"/>
                                                         </constraints>
                                                         <connections>
-                                                            <segue destination="l6E-zU-vWo" kind="embed" identifier="" id="lYp-o4-3Wc"/>
+                                                            <segue destination="l6E-zU-vWo" kind="embed" identifier="showDescriptionViewController" id="lYp-o4-3Wc"/>
                                                         </connections>
                                                     </containerView>
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyb-IK-edf">
@@ -51,7 +51,7 @@
                                                             <constraint firstAttribute="height" constant="150" id="n3O-WI-GBc"/>
                                                         </constraints>
                                                         <connections>
-                                                            <segue destination="U6n-q2-qcr" kind="embed" identifier="showRelatedVideosViewController" id="n3z-oa-Tyf"/>
+                                                            <segue destination="U6n-q2-qcr" kind="embed" identifier="showActionsViewController" id="n3z-oa-Tyf"/>
                                                         </connections>
                                                     </containerView>
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bby-mw-xgz">
@@ -60,7 +60,7 @@
                                                             <constraint firstAttribute="height" constant="200" id="df4-bS-58Y"/>
                                                         </constraints>
                                                         <connections>
-                                                            <segue destination="lSh-Js-iAm" kind="embed" identifier="showActionsViewController" id="G0Q-pn-WpE"/>
+                                                            <segue destination="lSh-Js-iAm" kind="embed" identifier="showRelatedVideosViewController" id="G0Q-pn-WpE"/>
                                                         </connections>
                                                     </containerView>
                                                 </subviews>
@@ -135,10 +135,10 @@
             </objects>
             <point key="canvasLocation" x="-398" y="133"/>
         </scene>
-        <!--View Controller-->
+        <!--Video View Controller-->
         <scene sceneID="xKp-dr-EAw">
             <objects>
-                <viewController id="4XV-uW-YcU" sceneMemberID="viewController">
+                <viewController id="4XV-uW-YcU" customClass="VideoViewController" customModule="SpaceApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pNe-Na-Vcy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -193,7 +193,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15Z-hv-oKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1364" y="539"/>
+            <point key="canvasLocation" x="1441" y="539"/>
         </scene>
         <!--Actions View Controller-->
         <scene sceneID="yV1-vd-sQq">
